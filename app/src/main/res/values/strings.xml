@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">لیتموید</string>
+    <string name="action_settings">تنظیمات</string>
+    <string name="none_paired">دستگاهی پیدا نشد!</string>
+    <string name="select_device">فهرست دستگاه‌ها</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
