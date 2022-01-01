@@ -37,7 +37,7 @@ public class DeviceListActivity extends AppCompatActivity {
     private ArrayAdapter<String> mPairedDevicesArrayAdapter;
 
     private boolean goToPulseActivity = false;
-    Switch switcheButton;
+//    Switch switcheButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,24 +50,24 @@ public class DeviceListActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.menu_main, menu);
-        MenuItem item = menu.findItem(R.id.action_toggle);
-        item.setActionView(R.layout.switch_layout);
+//        MenuItem item = menu.findItem(R.id.action_toggle);
+//        item.setActionView(R.layout.switch_layout);
+n
+//        switcheButton = (Switch)menu.findItem(R.id.action_toggle).getActionView().findViewById(R.id.switchForActionBar);
 
-        switcheButton = (Switch)menu.findItem(R.id.action_toggle).getActionView().findViewById(R.id.switchForActionBar);
-
-        switcheButton.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView,
-                                         boolean isChecked) {
-                if (isChecked) {
-                    Toast.makeText(getApplication(), "Pulse: ON", Toast.LENGTH_SHORT).show();
-                    goToPulseActivity = true;
-                } else {
-                    Toast.makeText(getApplication(), "Pulse: OFF", Toast.LENGTH_SHORT).show();
-                    goToPulseActivity = false;
-                }
-            }
-        });
+//        switcheButton.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+//            @Override
+//            public void onCheckedChanged(CompoundButton buttonView,
+//                                         boolean isChecked) {
+//                if (isChecked) {
+//                    Toast.makeText(getApplication(), "Pulse: ON", Toast.LENGTH_SHORT).show();
+//                    goToPulseActivity = true;
+//                } else {
+//                    Toast.makeText(getApplication(), "Pulse: OFF", Toast.LENGTH_SHORT).show();
+//                    goToPulseActivity = false;
+//                }
+//            }
+//        });
 
         this.menu = menu;
         return true;

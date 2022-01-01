@@ -85,12 +85,12 @@ public class PhActivity extends AppCompatActivity {
 
                     if (endOfLineIndex > 0) {                                                   // make sure there data before ~
                         int startOfLineIndex = recDataString.indexOf("<");
-                        if(startOfLineIndex == 0 && counter++ == 20)
+                        if(startOfLineIndex == 0)
                         {
                             counter = 0;
                             mConnectedThread.write("x");
 
-//                            Log.d("MainActivityLogger", recDataString.toString());
+                            Log.d("MainActivityLogger", recDataString.toString());
                             StringBuilder temp = new StringBuilder();
                             for (int idx = 1; recDataString.charAt(idx) != '>'; idx++)
                                 temp.append(recDataString.charAt(idx));
